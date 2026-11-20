@@ -1,5 +1,6 @@
 import HeroGlassCube from "@/components/sections/hero/HeroGlassCube";
 import GalleryGlassRail from "@/components/sections/gallery/GalleryGlassRail";
+import BespokeShowcaseGrid from "@/components/sections/gallery/BespokeShowcaseGrid";
 import PricingGlassColumns from "@/components/sections/pricing/PricingGlassColumns";
 import TestimonialGlassQuotes from "@/components/sections/testimonial/TestimonialGlassQuotes";
 import FaqCrossAccordion from "@/components/sections/faq/FaqCrossAccordion";
@@ -92,9 +93,48 @@ export default function HomePage() {
               imageSrc: "https://img.b2bpic.net/free-photo/white-flowers-bouquet-table_140725-878.jpg",
               imageAlt: "white flowers bouquet",
               href: "#contact"
+            },
+            {
+              title: "Baccara Luxe Rose Spray",
+              meta: "Bespoke",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3MEwysOv31t7f9Ov9oDsUF6BXKv/uploaded-1795197095486-ajph9wbe.jpg",
+              imageAlt: "Luxurious Baccara spray rose bouquet with eucalyptus accents",
+              href: "#contact"
+            },
+            {
+              title: "Ranunculus & Hydrangea Basket",
+              meta: "Bespoke",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3MEwysOv31t7f9Ov9oDsUF6BXKv/uploaded-1795197095487-sbtlvcdp.jpg",
+              imageAlt: "Grand white woven basket arrangement with soft pink ranunculus and hydrangeas",
+              href: "#contact"
+            },
+            {
+              title: "Signature Pink Spray Sphere",
+              meta: "Bespoke",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3MEwysOv31t7f9Ov9oDsUF6BXKv/uploaded-1795197095489-82fdo6u1.jpg",
+              imageAlt: "Grand sphere bouquet of fresh light pink spray roses with Baccara ribbons",
+              href: "#contact"
+            },
+            {
+              title: "Garden Rose & Silk Ribbon Basket",
+              meta: "Bespoke",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3MEwysOv31t7f9Ov9oDsUF6BXKv/uploaded-1795197095489-l5mdri96.jpg",
+              imageAlt: "Woven basket arrangement with white and blush garden roses and silk ribbons",
+              href: "#contact"
+            },
+            {
+              title: "Velvet Rose & Hydrangea Luxe",
+              meta: "Bespoke",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3MEwysOv31t7f9Ov9oDsUF6BXKv/uploaded-1795197095490-nef1zs1q.jpg",
+              imageAlt: "Luxury bespoke floral bouquet arrangement by Baccara Flowers",
+              href: "#contact"
             }
           ]}
         />
+      </div>
+
+      <div id="creations" data-webild-section="BespokeShowcaseGrid" data-webild-section-id="BespokeShowcaseGrid-1" data-section="creations">
+        <BespokeShowcaseGrid />
       </div>
 
       <div id="pricing" data-webild-section="PricingGlassColumns" data-webild-section-id="PricingGlassColumns-1" data-section="pricing">
