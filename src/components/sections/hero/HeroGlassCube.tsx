@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
+import { Phone, Instagram, MapPin } from "lucide-react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
@@ -661,16 +662,30 @@ export default function HeroGlassCube({
                 ))}
               </h1>
             )}
-            {primaryButton && (
-              <motion.a {...fade(0)} href={primaryButton.href} className="btn-arrow pointer-events-auto mt-[clamp(1.5rem,5vh,3rem)]">
-                <p>{primaryButton.text}</p>
-                <div aria-hidden="true" className="btn-arrow-dot">
-                  <svg viewBox="0 0 14 14" className="size-3.5">
-                    <path d="M4 10 10 4M5.5 4H10v4.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-              </motion.a>
-            )}
+            <motion.div {...fade(0)} className="mt-[clamp(1.5rem,5vh,3rem)] flex flex-wrap items-center gap-3">
+              {primaryButton && (
+                <a href={primaryButton.href} className="btn-arrow pointer-events-auto">
+                  <p>{primaryButton.text}</p>
+                  <div aria-hidden="true" className="btn-arrow-dot">
+                    <svg viewBox="0 0 14 14" className="size-3.5">
+                      <path d="M4 10 10 4M5.5 4H10v4.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </a>
+              )}
+              <a href="tel:2155947640" className="btn-secondary pointer-events-auto flex items-center gap-2">
+                <Phone className="size-4 text-primary" />
+                <span>(215) 594-7640</span>
+              </a>
+              <a href="https://www.instagram.com/baccara.buket_philadelphia/" target="_blank" rel="noopener noreferrer" className="btn-secondary pointer-events-auto flex items-center gap-2">
+                <Instagram className="size-4 text-primary" />
+                <span>Instagram</span>
+              </a>
+              <a href="https://maps.app.goo.gl/b2Kueyuh7xVfXj758" target="_blank" rel="noopener noreferrer" className="btn-secondary pointer-events-auto flex items-center gap-2">
+                <MapPin className="size-4 text-primary" />
+                <span>Google Maps</span>
+              </a>
+            </motion.div>
           </div>
           <div ref={stageRef} className="relative min-h-[16rem] flex-1 lg:col-span-4 lg:col-start-6 lg:row-start-1 lg:min-h-0" />
           {(tag || statement) && (
