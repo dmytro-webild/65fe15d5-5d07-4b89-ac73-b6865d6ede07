@@ -10,14 +10,14 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #f8f7ea;
-  --primary-cta-text: #060500;
-  --secondary-cta: #0e0c00;
-  --background-accent: #ffed4d;
+  --primary-cta: #f7f6f0;
+  --primary-cta-text: #080107;
+  --secondary-cta: #120210;
+  --background-accent: #ff8ae8;
 
-  --background: #060500;
-  --foreground: #f8f7ea;
-  --card: #141000;
+  --background: #080107;
+  --foreground: #f7f6f0;
+  --card: #190317;
   --card-foreground: var(--foreground);
   --popover: var(--card);
   --popover-foreground: var(--foreground);
@@ -25,26 +25,26 @@
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--foreground);
-  --muted: #110d00;
-  --muted-foreground: #9c9b91;
+  --muted: #150212;
+  --muted-foreground: #9b9796;
   --accent: var(--background-accent);
   --accent-foreground: var(--background);
-  --deep: #030300;
+  --deep: #040104;
   --deep-foreground: var(--foreground);
   --destructive: #ff6b5b;
   --destructive-foreground: var(--background);
-  --border: #2a2923;
+  --border: #2b252a;
   --input: var(--border);
   --ring: var(--primary-cta);
   --hairline: color-mix(in srgb, var(--foreground) 13%, transparent);
 
-  --glow-deep: #4a3c02;
-  --glow-mid: #e0c00c;
-  --glow-low: #fff57a;
-  --glow-floor: #ffffd0;
-  --glass-tint: #c09906;
+  --glow-deep: #5c0a53;
+  --glow-mid: #e22bbf;
+  --glow-low: #ff9ce7;
+  --glow-floor: #ffe4f9;
+  --glass-tint: #c41faf;
   --glass-glow: var(--accent);
-  --glass-sky: #241c02;
+  --glass-sky: #30042d;
 
   --font-heading: "Cormorant Garamond", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
