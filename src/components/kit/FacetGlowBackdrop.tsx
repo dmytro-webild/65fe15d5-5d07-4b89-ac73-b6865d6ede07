@@ -150,7 +150,7 @@ const FacetGlowBackdrop = ({ dim = 0.5, particles = true }: { dim?: number; part
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
       <div className="facet-glow facet-breathe absolute inset-[-8%]" />
-      <div className="absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-t from-background/80 via-background/30 to-transparent" />
       <motion.div style={{ opacity: scrim }} className="absolute inset-0 bg-background" />
       {particles && <FacetDust />}
     </div>
