@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700..900&family=Inter+Tight:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700..900&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif&display=swap");
 @import "tailwindcss";
 @import "./styles/animations.css";
 @import "./styles/masks.css";
@@ -9,14 +9,14 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #f8f1e6;
-  --primary-cta-text: #050101;
-  --secondary-cta: #0f0201;
-  --background-accent: #ff8a2c;
+  --primary-cta: #f8f0ef;
+  --primary-cta-text: #070102;
+  --secondary-cta: #110206;
+  --background-accent: #ff5a6e;
 
-  --background: #050101;
-  --foreground: #f8f1e6;
-  --card: #160201;
+  --background: #070102;
+  --foreground: #f8f0ef;
+  --card: #190308;
   --card-foreground: var(--foreground);
   --popover: var(--card);
   --popover-foreground: var(--foreground);
@@ -24,28 +24,28 @@
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--foreground);
-  --muted: #130201;
-  --muted-foreground: #9c968f;
+  --muted: #15020a;
+  --muted-foreground: #9d9594;
   --accent: var(--background-accent);
   --accent-foreground: var(--background);
-  --deep: #030101;
+  --deep: #040101;
   --deep-foreground: var(--foreground);
   --destructive: #ff6b5b;
   --destructive-foreground: var(--background);
-  --border: #292523;
+  --border: #2b2425;
   --input: var(--border);
   --ring: var(--primary-cta);
   --hairline: color-mix(in srgb, var(--foreground) 13%, transparent);
 
-  --glow-deep: #5c0603;
-  --glow-mid: #e0300c;
-  --glow-low: #ffb347;
-  --glow-floor: #ffe6a8;
-  --glass-tint: #a8100a;
+  --glow-deep: #5c0414;
+  --glow-mid: #d0123a;
+  --glow-low: #ff7a8c;
+  --glow-floor: #ffe0e5;
+  --glass-tint: #9a0a26;
   --glass-glow: var(--accent);
-  --glass-sky: #1a0101;
+  --glass-sky: #22030a;
 
-  --font-heading: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: "Instrument Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-wordmark: "Big Shoulders Display", "Oswald", "Arial Narrow", sans-serif;
   --heading-weight: 400;
@@ -143,7 +143,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Instrument Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: var(--heading-weight);
     letter-spacing: var(--heading-tracking);
     line-height: var(--heading-leading);
