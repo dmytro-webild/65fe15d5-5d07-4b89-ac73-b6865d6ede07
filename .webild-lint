@@ -1,0 +1,9 @@
+src/components/Layout.tsx
+src/components/sections/contact/ContactGlassForm.tsx
+src/components/sections/faq/FaqCrossAccordion.tsx
+src/components/sections/footer/FooterGlowWordmark.tsx
+src/components/sections/gallery/GalleryGlassRail.tsx
+src/components/sections/hero/HeroGlassCube.tsx
+src/components/sections/pricing/PricingGlassColumns.tsx
+src/components/sections/testimonial/TestimonialGlassQuotes.tsx
+src/pages/HomePage.tsx

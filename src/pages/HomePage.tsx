@@ -1,0 +1,262 @@
+import HeroGlassCube from "@/components/sections/hero/HeroGlassCube";
+import GalleryGlassRail from "@/components/sections/gallery/GalleryGlassRail";
+import PricingGlassColumns from "@/components/sections/pricing/PricingGlassColumns";
+import TestimonialGlassQuotes from "@/components/sections/testimonial/TestimonialGlassQuotes";
+import FaqCrossAccordion from "@/components/sections/faq/FaqCrossAccordion";
+import ContactGlassForm from "@/components/sections/contact/ContactGlassForm";
+import FacetGlowBackdrop from "@/components/kit/FacetGlowBackdrop";
+import LoaderGlowRise from "@/components/loaders/LoaderGlowRise";
+
+export default function HomePage() {
+  return (
+    <>
+      <FacetGlowBackdrop
+
+      />
+
+      <LoaderGlowRise
+        wordmark={[
+          "Baccara Flowers",
+          "Artisanal Luxury Floral Design"
+        ]}
+        introDelay={1.3}
+      />
+
+      <div id="home" data-webild-section="HeroGlassCube" data-webild-section-id="HeroGlassCube-1" data-section="home">
+        <HeroGlassCube
+          titleLines={[
+            {
+              text: "Flowers that speak"
+            },
+            {
+              text: "when words cannot"
+            }
+          ]}
+          primaryButton={{
+            text: "Explore collection",
+            href: "#shop"
+          }}
+          tag="Luxury florals"
+          statement="Artisanal arrangements crafted with care."
+          label="Boutique studio"
+          description="Ethereal floral designs for life's most cherished moments."
+          shape="ring"
+          introDelay={1.3}
+        />
+      </div>
+
+      <div id="shop" data-webild-section="GalleryGlassRail" data-webild-section-id="GalleryGlassRail-1" data-section="shop">
+        <GalleryGlassRail
+          tag="Signature"
+          title="Current arrangements"
+          description="Artisanal luxury floral arrangements crafted daily with fresh seasonal stems."
+          items={[
+            {
+              title: "Baccara Blush",
+              meta: "From $145",
+              imageSrc: "https://img.b2bpic.net/free-photo/bouquet-pink-roses-isolated-white-panoramic-view_268835-1376.jpg",
+              imageAlt: "Bouquet of pink roses isolated on white, panoramic view",
+              href: "#contact"
+            },
+            {
+              title: "Ivory Grace",
+              meta: "From $165",
+              imageSrc: "https://img.b2bpic.net/free-photo/bouquet-roses-close-up-with-copy-space_23-2148822245.jpg",
+              imageAlt: "Bouquet of roses close-up with copy space",
+              href: "#contact"
+            },
+            {
+              title: "Pink Dream",
+              meta: "From $185",
+              imageSrc: "https://img.b2bpic.net/free-photo/pink-bucket-with-bouquet-flowers-marble-surface_114579-21258.jpg",
+              imageAlt: "A pink bucket with bouquet of flowers on marble surface.",
+              href: "#contact"
+            },
+            {
+              title: "Royal Bouquet",
+              meta: "From $275",
+              imageSrc: "https://img.b2bpic.net/free-photo/valentines-day-womens-mothers-day-red-rose-with-ribbon-heart-gift-surprise_114579-448.jpg",
+              imageAlt: "Valentines day womens mothers day red rose with ribbon heart gift surprise",
+              href: "#contact"
+            },
+            {
+              title: "Garden Joy",
+              meta: "From $135",
+              imageSrc: "https://img.b2bpic.net/free-photo/floral-arrangement-with-glass-dish_58702-25693.jpg",
+              imageAlt: "Floral arrangement with glass dish",
+              href: "#contact"
+            },
+            {
+              title: "Pearl White",
+              meta: "From $150",
+              imageSrc: "https://img.b2bpic.net/free-photo/white-flowers-bouquet-table_140725-878.jpg",
+              imageAlt: "white flowers bouquet",
+              href: "#contact"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="pricing" data-webild-section="PricingGlassColumns" data-webild-section-id="PricingGlassColumns-1" data-section="pricing">
+        <PricingGlassColumns
+          tag="Bespoke Services"
+          title="Artisanal floral services and curation"
+          description="Choose signature luxury bouquets, recurring home subscriptions, or full-scale floral installations tailored to your vision."
+          items={[
+            {
+              title: "Signature Petite",
+              price: "$125",
+              period: "per arrangement",
+              description: "Hand-crafted stem selection featuring luxury blush roses and seasonal botanical accents.",
+              features: [
+                "Premium stem selection",
+                "Signature silk ribbon wrap",
+                "Same-day local delivery",
+                "Care card & flower food"
+              ],
+              button: {
+                text: "Order bouquet",
+                href: "#shop"
+              }
+            },
+            {
+              title: "Floral Residency",
+              price: "$350",
+              period: "per month",
+              description: "Bi-weekly fresh luxury arrangements delivered in custom glass vessels for homes and foyers.",
+              features: [
+                "Two premium deliveries monthly",
+                "Vessel rotation included",
+                "Bespoke colour palette",
+                "Priority delivery slots"
+              ],
+              button: {
+                text: "Start subscription",
+                href: "#contact"
+              }
+            },
+            {
+              title: "Bespoke Events",
+              price: "Custom",
+              period: "quoted per event",
+              description: "Full-service floral architecture for weddings, private galas, and grand celebrations.",
+              features: [
+                "On-site floral installation",
+                "Personalized moodboards",
+                "Tablescapes & entry arches",
+                "Dedicated event florist"
+              ],
+              button: {
+                text: "Plan an event",
+                href: "#contact"
+              }
+            }
+          ]}
+        />
+      </div>
+
+      <div id="testimonial" data-webild-section="TestimonialGlassQuotes" data-webild-section-id="TestimonialGlassQuotes-1" data-section="testimonial">
+        <TestimonialGlassQuotes
+          tag="Love"
+          title="Words from our clients"
+          items={[
+            {
+              quote: "The flowers for our ceremony were breathtaking. Every stem was fresh, lush, and placed with such intention.",
+              name: "Leah Turner",
+              role: "Wedding Client",
+              imageSrc: "https://img.b2bpic.net/free-photo/gorgeous-portrait-bridesmaid-with-flower-boquete_23-2149278397.jpg",
+              imageAlt: "Gorgeous portrait of bridesmaid with flower boquete"
+            },
+            {
+              quote: "The most beautiful arrangements in the area. They last remarkably long and look like sculptural art in our home.",
+              name: "Daniel Patel",
+              role: "Regular Client",
+              imageSrc: "https://img.b2bpic.net/free-photo/side-view-adult-holding-plate-with-food_23-2149660909.jpg",
+              imageAlt: "Side view adult holding plate with food"
+            },
+            {
+              quote: "Baccara is my go-to floral partner in PA. Reliable, creative, and endlessly talented with palette choices.",
+              name: "Jessica Fletcher",
+              role: "Event Planner",
+              imageSrc: "https://img.b2bpic.net/free-photo/woman-making-floral-bouquet_23-2148846527.jpg",
+              imageAlt: "Woman making a floral bouquet"
+            },
+            {
+              quote: "The team helped me choose the perfect color palette. Impeccable taste and friendly service every time.",
+              name: "Chloe Price",
+              role: "Anniversary Client",
+              imageSrc: "https://img.b2bpic.net/free-photo/elegant-stylish-girl-summer-garden_1157-24472.jpg",
+              imageAlt: "Elegant and stylish girl in a summer garden"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="faq" data-webild-section="FaqCrossAccordion" data-webild-section-id="FaqCrossAccordion-1" data-section="faq">
+        <FaqCrossAccordion
+          tag="Help"
+          title="Planning your order"
+          description="Details on visiting our boutique flower shop or reserving bespoke floral arrangements."
+          items={[
+            {
+              title: "Where is the flower studio located?",
+              description: "We are located at 304 Bustleton Pike, Feasterville-Trevose, PA 19053."
+            },
+            {
+              title: "What are your operating hours?",
+              description: "We are open every day from 9:00 AM – 10:00 PM for walk-ins, phone orders, and pickups."
+            },
+            {
+              title: "How do I place a custom floral order?",
+              description: "Call us directly at (215) 594-7640 to speak with a florist and discuss bespoke arrangements."
+            },
+            {
+              title: "Do you offer local flower delivery?",
+              description: "Yes, we provide hand delivery for luxury arrangements across Feasterville-Trevose and the surrounding local area."
+            },
+            {
+              title: "How do I maintain my fresh flowers?",
+              description: "Keep your blooms in fresh water, away from direct sunlight and heat sources, trimming stems lightly every two days."
+            }
+          ]}
+        />
+      </div>
+
+      <div id="contact" data-webild-section="ContactGlassForm" data-webild-section-id="ContactGlassForm-1" data-section="contact">
+        <ContactGlassForm
+          title="Reserve your bespoke floral arrangement"
+          fields={[
+            {
+              name: "name",
+              label: "Full Name",
+              type: "text",
+              placeholder: "Your full name"
+            },
+            {
+              name: "phone",
+              label: "Phone Number",
+              type: "tel",
+              placeholder: "(215) 594-7640"
+            },
+            {
+              name: "email",
+              label: "Email Address",
+              type: "email",
+              placeholder: "contact@baccaraflowers.com"
+            },
+            {
+              name: "message",
+              label: "Bespoke Request",
+              type: "textarea",
+              placeholder: "Tell us about your occasion"
+            }
+          ]}
+          buttonText="Submit Inquiry"
+          successText="Thank you. Our floral designers will contact you shortly to confirm."
+          imageSrc="https://img.b2bpic.net/free-photo/boquet-pink-orchid_181624-731.jpg"
+          imageAlt="assorted floral boutonnieres"
+        />
+      </div>
+    </>
+  );
+}
