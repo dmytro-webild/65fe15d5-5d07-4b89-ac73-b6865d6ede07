@@ -10,14 +10,14 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #d98880;
-  --primary-cta-text: #383534;
-  --secondary-cta: #f4ece1;
-  --background-accent: #a95e56;
+  --primary-cta: #f8f1ee;
+  --primary-cta-text: #070103;
+  --secondary-cta: #110208;
+  --background-accent: #ff8fb5;
 
-  --background: #fdfaf7;
-  --foreground: #2d1a1e;
-  --card: #f0ece8;
+  --background: #070103;
+  --foreground: #f8f1ee;
+  --card: #18030b;
   --card-foreground: var(--foreground);
   --popover: var(--card);
   --popover-foreground: var(--foreground);
@@ -25,26 +25,26 @@
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--foreground);
-  --muted: color-mix(in srgb, var(--card) 85%, var(--background));
-  --muted-foreground: color-mix(in srgb, var(--foreground) 62%, var(--background));
+  --muted: #150209;
+  --muted-foreground: #9c9695;
   --accent: var(--background-accent);
   --accent-foreground: var(--background);
-  --deep: #1a0b0d;
+  --deep: #040102;
   --deep-foreground: var(--foreground);
   --destructive: #ff6b5b;
   --destructive-foreground: var(--background);
-  --border: color-mix(in srgb, var(--foreground) 15%, var(--background));
+  --border: #2b2526;
   --input: var(--border);
   --ring: var(--primary-cta);
   --hairline: color-mix(in srgb, var(--foreground) 13%, transparent);
 
-  --glow-deep: oklch(from var(--accent) calc(l * 0.405) calc(c * 0.68) calc(h - 24));
-  --glow-mid: oklch(from var(--accent) calc(l * 0.79) calc(c * 1.25) calc(h - 21));
-  --glow-low: oklch(from var(--accent) min(calc(l + 0.07), 0.95) calc(c * 0.86) calc(h + 18));
-  --glow-floor: oklch(from var(--accent) min(calc(l + 0.18), 0.97) calc(c * 0.48) calc(h + 35));
-  --glass-tint: oklch(from var(--accent) calc(l * 0.62) calc(c * 1.06) calc(h - 24));
+  --glow-deep: #5c0a2a;
+  --glow-mid: #e0346e;
+  --glow-low: #ffa3c2;
+  --glow-floor: #ffe6ef;
+  --glass-tint: #b8164f;
   --glass-glow: var(--accent);
-  --glass-sky: color-mix(in srgb, var(--glow-deep) 25%, var(--background));
+  --glass-sky: #2a0414;
 
   --font-heading: "Cormorant Garamond", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
