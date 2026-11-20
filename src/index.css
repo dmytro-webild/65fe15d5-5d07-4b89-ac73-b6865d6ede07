@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700..900&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif&family=Bricolage+Grotesque:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700..900&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif&family=Bricolage+Grotesque:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "./styles/animations.css";
 @import "./styles/masks.css";
@@ -9,14 +9,14 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #f8f7ea;
-  --primary-cta-text: #060500;
-  --secondary-cta: #0e0c00;
-  --background-accent: #ffed4d;
+  --primary-cta: #f8f6ee;
+  --primary-cta-text: #070201;
+  --secondary-cta: #110402;
+  --background-accent: #ffa28f;
 
-  --background: #060500;
-  --foreground: #f8f7ea;
-  --card: #141000;
+  --background: #070201;
+  --foreground: #f8f6ee;
+  --card: #180603;
   --card-foreground: var(--foreground);
   --popover: var(--card);
   --popover-foreground: var(--foreground);
@@ -24,29 +24,29 @@
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--foreground);
-  --muted: #110d00;
-  --muted-foreground: #9c9b91;
+  --muted: #150502;
+  --muted-foreground: #9c9a95;
   --accent: var(--background-accent);
   --accent-foreground: var(--background);
-  --deep: #030300;
+  --deep: #040201;
   --deep-foreground: var(--foreground);
   --destructive: #ff6b5b;
   --destructive-foreground: var(--background);
-  --border: #2a2923;
+  --border: #2b2725;
   --input: var(--border);
   --ring: var(--primary-cta);
   --hairline: color-mix(in srgb, var(--foreground) 13%, transparent);
 
-  --glow-deep: #4a3c02;
-  --glow-mid: #e0c00c;
-  --glow-low: #fff57a;
-  --glow-floor: #ffffd0;
-  --glass-tint: #c09906;
+  --glow-deep: #5c130a;
+  --glow-mid: #e05134;
+  --glow-low: #ffb3a3;
+  --glow-floor: #ffeae6;
+  --glass-tint: #b82f16;
   --glass-glow: var(--accent);
-  --glass-sky: #241c02;
+  --glass-sky: #2a0704;
 
-  --font-heading: "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: "Figtree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: "DM Serif Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-wordmark: "Big Shoulders Display", "Oswald", "Arial Narrow", sans-serif;
   --heading-weight: 400;
   --heading-tracking: -0.01em;
@@ -136,14 +136,14 @@
     margin: 0;
     background-color: var(--background);
     color: var(--foreground);
-    font-family: "Figtree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "DM Serif Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: var(--heading-weight);
     letter-spacing: var(--heading-tracking);
     line-height: var(--heading-leading);
