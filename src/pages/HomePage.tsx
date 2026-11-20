@@ -157,36 +157,41 @@ export default function HomePage() {
 
       <div id="testimonial" data-webild-section="TestimonialGlassQuotes" data-webild-section-id="TestimonialGlassQuotes-1" data-section="testimonial">
         <TestimonialGlassQuotes
-          tag="Love"
-          title="Words from our clients"
+          tag="Reviews"
+          title="Customer reviews"
+          description="Real experiences from our clients celebrating life's special moments with Baccara Flowers."
           items={[
             {
-              quote: "The flowers for our ceremony were breathtaking. Every stem was fresh, lush, and placed with such intention.",
-              name: "Leah Turner",
-              role: "Wedding Client",
+              quote: "Absolutely stunning bouquets! 😍 The flowers are so fresh, and every arrangement is beautiful in its own way. Even more gorgeous in person! Thank you for putting so much love and care into every detail 🤍💐",
+              name: "Sevinch Makhmudova",
+              role: "Verified Client",
+              rating: 5,
               imageSrc: "https://img.b2bpic.net/free-photo/gorgeous-portrait-bridesmaid-with-flower-boquete_23-2149278397.jpg",
-              imageAlt: "Gorgeous portrait of bridesmaid with flower boquete"
+              imageAlt: "Sevinch Makhmudova"
             },
             {
-              quote: "The most beautiful arrangements in the area. They last remarkably long and look like sculptural art in our home.",
-              name: "Daniel Patel",
-              role: "Regular Client",
+              quote: "You should try the chocolate covered strawberries 🍓 here! Worth every penny",
+              name: "Parvina Ziyaeva",
+              role: "Verified Client",
+              rating: 5,
               imageSrc: "https://img.b2bpic.net/free-photo/side-view-adult-holding-plate-with-food_23-2149660909.jpg",
-              imageAlt: "Side view adult holding plate with food"
+              imageAlt: "Parvina Ziyaeva"
             },
             {
-              quote: "Baccara is my go-to floral partner in PA. Reliable, creative, and endlessly talented with palette choices.",
-              name: "Jessica Fletcher",
-              role: "Event Planner",
+              quote: "I had a wonderful experience with Baccara Flower Shop in Braselton. The flowers were absolutely stunning—fresh, beautifully arranged, and clearly prepared with great attention to detail. The staff was very professional, friendly, and helpful throughout the entire process.\n\nYou can truly see the passion they have for their work. The arrangement looked elegant and exceeded my expectations. If you are looking for high-quality flowers and excellent customer service, I highly recommend this",
+              name: "Farangis Karimova",
+              role: "Verified Client",
+              rating: 5,
               imageSrc: "https://img.b2bpic.net/free-photo/woman-making-floral-bouquet_23-2148846527.jpg",
-              imageAlt: "Woman making a floral bouquet"
+              imageAlt: "Farangis Karimova"
             },
             {
-              quote: "The team helped me choose the perfect color palette. Impeccable taste and friendly service every time.",
-              name: "Chloe Price",
-              role: "Anniversary Client",
+              quote: "Exceptional quality, freshest flowers, and outstanding customer service! Every arrangement is handled with utmost care and elegance. Highly recommended!",
+              name: "JK",
+              role: "Verified Client",
+              rating: 5,
               imageSrc: "https://img.b2bpic.net/free-photo/elegant-stylish-girl-summer-garden_1157-24472.jpg",
-              imageAlt: "Elegant and stylish girl in a summer garden"
+              imageAlt: "JK"
             }
           ]}
         />

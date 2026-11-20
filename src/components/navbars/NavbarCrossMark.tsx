@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import { Phone, Instagram, MapPin } from "lucide-react";
 import useMenuDialog from "@/components/kit/useMenuDialog";
 
 type NavbarCrossMarkProps = {
@@ -52,11 +53,23 @@ export default function NavbarCrossMark({
               </a>
             ))}
           </nav>
-          {primaryButton && (
-            <a href={primaryButton.href} className="btn-primary min-h-[2.375rem] px-5">
-              {primaryButton.text}
+          <div className="flex items-center gap-2.5">
+            {primaryButton && (
+              <a href={primaryButton.href} className="btn-primary min-h-[2.25rem] px-4 flex items-center gap-2">
+                {primaryButton.text}
+              </a>
+            )}
+            <a href="tel:2155947640" className="btn-primary min-h-[2.25rem] px-4 flex items-center gap-2">
+              <Phone className="size-3.5" />
+              <span>(215) 594-7640</span>
             </a>
-          )}
+            <a href="https://www.instagram.com/baccara.buket_philadelphia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="btn-secondary min-h-[2.25rem] w-[2.25rem] min-w-[2.25rem] p-0 flex items-center justify-center">
+              <Instagram className="size-4" />
+            </a>
+            <a href="https://maps.app.goo.gl/b2Kueyuh7xVfXj758" target="_blank" rel="noopener noreferrer" aria-label="Google Maps" className="btn-secondary min-h-[2.25rem] w-[2.25rem] min-w-[2.25rem] p-0 flex items-center justify-center">
+              <MapPin className="size-4" />
+            </a>
+          </div>
         </div>
         <button
           type="button"
@@ -73,20 +86,36 @@ export default function NavbarCrossMark({
         inert={!open}
         className={`absolute inset-x-0 top-full max-h-[calc(100svh-4.5rem)] overflow-y-auto pt-2 transition-[opacity,translate] duration-500 ease-[var(--ease-out)] lg:hidden ${open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
       >
-        <nav aria-label="Mobile" className="mx-auto flex w-[var(--container)] flex-col rounded-[var(--radius-card)] border border-[color-mix(in_srgb,var(--foreground)_12%,transparent)] bg-card p-2 shadow-[inset_0_1px_0_color-mix(in_srgb,var(--foreground)_10%,transparent)]">
+        <nav aria-label="Mobile" className="mx-auto flex w-[var(--container)] flex-col gap-1 rounded-[var(--radius-card)] border border-[color-mix(in_srgb,var(--foreground)_12%,transparent)] bg-card p-2 shadow-[inset_0_1px_0_color-mix(in_srgb,var(--foreground)_10%,transparent)]">
           {navItems.map((item, i) => (
-            <a key={item.href + item.name} href={item.href} onClick={() => setOpen(false)} className={`flex items-center justify-between rounded-[var(--radius)] px-3 py-3.5 text-[length:var(--text-h3)] leading-[1.2] tracking-[var(--heading-tracking)] transition-colors duration-300 ${i < navItems.length - 1 ? "border-b border-[color-mix(in_srgb,var(--foreground)_10%,transparent)]" : ""} hover:bg-[color-mix(in_srgb,var(--foreground)_6%,transparent)]`}>
+            <a key={item.href + item.name} href={item.href} onClick={() => setOpen(false)} className={`flex items-center justify-between rounded-[var(--radius)] px-3 py-3 text-[length:var(--text-h3)] leading-[1.2] tracking-[var(--heading-tracking)] transition-colors duration-300 ${i < navItems.length - 1 ? "border-b border-[color-mix(in_srgb,var(--foreground)_10%,transparent)]" : ""} hover:bg-[color-mix(in_srgb,var(--foreground)_6%,transparent)]`}>
               {item.name}
               <svg viewBox="0 0 12 12" aria-hidden="true" className="size-[10px] opacity-50">
                 <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" strokeWidth="1.6" />
               </svg>
             </a>
           ))}
-          {primaryButton && (
-            <a href={primaryButton.href} onClick={() => setOpen(false)} className="btn-primary mt-2 w-full">
-              {primaryButton.text}
+          <div className="mt-2 flex flex-col gap-2 pt-1 border-t border-[color-mix(in_srgb,var(--foreground)_10%,transparent)]">
+            {primaryButton && (
+              <a href={primaryButton.href} onClick={() => setOpen(false)} className="btn-primary w-full text-center py-2.5">
+                {primaryButton.text}
+              </a>
+            )}
+            <a href="tel:2155947640" onClick={() => setOpen(false)} className="btn-primary w-full flex items-center justify-center gap-2 py-2.5">
+              <Phone className="size-4" />
+              <span>(215) 594-7640</span>
             </a>
-          )}
+            <div className="grid grid-cols-2 gap-2">
+              <a href="https://www.instagram.com/baccara.buket_philadelphia/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="btn-secondary w-full flex items-center justify-center gap-2 py-2">
+                <Instagram className="size-4" />
+                <span>Instagram</span>
+              </a>
+              <a href="https://maps.app.goo.gl/b2Kueyuh7xVfXj758" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="btn-secondary w-full flex items-center justify-center gap-2 py-2">
+                <MapPin className="size-4" />
+                <span>Google Maps</span>
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

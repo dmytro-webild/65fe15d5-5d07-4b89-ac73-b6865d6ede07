@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 import { motion, useMotionValue, useReducedMotion } from "motion/react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -12,7 +12,7 @@ const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
-type Testimonial = { quote: string; name: string; role?: string; imageSrc?: string; imageAlt?: string };
+type Testimonial = { quote: string; name: string; role?: string; rating?: number; imageSrc?: string; imageAlt?: string };
 
 type TestimonialGlassQuotesProps = {
   tag?: string;
@@ -28,9 +28,9 @@ const TestimonialGlassQuotes = ({
   title = "Kind words",
   description,
   items = [
-    { quote: "The vase catches the morning light and throws it across the whole room. Guests always ask about it.", name: "Ines Rocha", role: "Collector" },
-    { quote: "They cast forty shades for our lobby and every one matched the sample to the hair.", name: "Jonas Reid", role: "Architect" },
-    { quote: "Patient, precise and honest about what glass can and cannot do. We will work with them again.", name: "Mara Voss", role: "Interior designer" },
+    { quote: "The vase catches the morning light and throws it across the whole room. Guests always ask about it.", name: "Ines Rocha", role: "Collector", rating: 5 },
+    { quote: "They cast forty shades for our lobby and every one matched the sample to the hair.", name: "Jonas Reid", role: "Architect", rating: 5 },
+    { quote: "Patient, precise and honest about what glass can and cannot do. We will work with them again.", name: "Mara Voss", role: "Interior designer", rating: 5 },
   ],
   ariaLabel,
   className,
@@ -91,13 +91,18 @@ const TestimonialGlassQuotes = ({
             <div ref={emblaRef} className="cursor-grab overflow-hidden active:cursor-grabbing">
               <div className="flex">
                 {items.map((item, index) => (
-                  <figure key={index} className="flex min-w-0 shrink-0 grow-0 basis-full flex-col gap-8 pr-[var(--gap)]">
+                  <figure key={index} className="flex min-w-0 shrink-0 grow-0 basis-full flex-col gap-6 pr-[var(--gap)]">
                     <motion.blockquote
                       initial={false}
                       animate={reduce || current === index ? { opacity: 1, y: 0 } : { opacity: 0.25, y: 12 }}
                       transition={{ duration: kit.slow, ease: kit.ease }}
-                      className="max-w-[46rem] text-balance text-[length:var(--text-h2)] leading-[1.12] tracking-[-0.025em] [overflow-wrap:anywhere]"
+                      className="max-w-[46rem] text-balance text-[length:var(--text-h2)] leading-[1.3] tracking-[-0.025em] whitespace-pre-line [overflow-wrap:anywhere]"
                     >
+                      <div className="flex items-center gap-1.5 pb-2 text-amber-500" aria-label={`${item.rating ?? 5} out of 5 stars`}>
+                        {Array.from({ length: item.rating ?? 5 }).map((_, i) => (
+                          <Star key={i} className="size-5 fill-amber-500 text-amber-500" />
+                        ))}
+                      </div>
                       {item.quote}
                     </motion.blockquote>
                     <figcaption className="flex items-center gap-4">
@@ -107,7 +112,7 @@ const TestimonialGlassQuotes = ({
                         </div>
                       )}
                       <div className="flex min-w-0 flex-col gap-0.5">
-                        <p className="text-[length:var(--text-body)] [overflow-wrap:anywhere]">{item.name}</p>
+                        <p className="text-[length:var(--text-body)] font-medium [overflow-wrap:anywhere]">{item.name}</p>
                         {item.role && <p className="text-[length:var(--text-label)] text-muted-foreground [overflow-wrap:anywhere]">{item.role}</p>}
                       </div>
                     </figcaption>

@@ -1,5 +1,6 @@
 import { useId, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
+import { Phone, Instagram, MapPin } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import IndentTitle from "@/components/kit/IndentTitle";
@@ -46,6 +47,33 @@ const ContactGlassForm = ({
       <div className={cn("mx-auto grid w-[var(--container)] grid-cols-1 gap-y-10", imageSrc && "lg:grid-cols-12 lg:gap-x-[var(--gap)]")}>
         <div className={cn("flex flex-col gap-[clamp(1.5rem,3vw,3rem)]", imageSrc && "lg:col-span-5")}>
           <IndentTitle text={title} className="text-[length:var(--text-h1)]" />
+          <div className="flex flex-wrap items-center gap-2.5">
+            <a
+              href="tel:2155947640"
+              className="btn-secondary flex items-center gap-2 py-2 text-[length:var(--text-small)]"
+            >
+              <Phone className="size-4 text-primary" />
+              <span>(215) 594-7640</span>
+            </a>
+            <a
+              href="https://www.instagram.com/baccara.buket_philadelphia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary flex items-center gap-2 py-2 text-[length:var(--text-small)]"
+            >
+              <Instagram className="size-4 text-primary" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/b2Kueyuh7xVfXj758"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary flex items-center gap-2 py-2 text-[length:var(--text-small)]"
+            >
+              <MapPin className="size-4 text-primary" />
+              <span>Google Maps</span>
+            </a>
+          </div>
           <motion.div aria-hidden="true" initial={reduce ? false : { scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true, margin: "0px 0px -6% 0px" }} transition={{ duration: kit.slow, ease: kit.ease }} className="h-px origin-left bg-border" />
           <BlurReveal
             as="form"
