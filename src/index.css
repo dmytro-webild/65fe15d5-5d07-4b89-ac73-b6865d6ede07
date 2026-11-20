@@ -9,14 +9,14 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #f8f6ee;
-  --primary-cta-text: #070201;
-  --secondary-cta: #110402;
-  --background-accent: #ffa28f;
+  --primary-cta: #f8f0ef;
+  --primary-cta-text: #070102;
+  --secondary-cta: #110206;
+  --background-accent: #ff5a6e;
 
-  --background: #070201;
-  --foreground: #f8f6ee;
-  --card: #180603;
+  --background: #070102;
+  --foreground: #f8f0ef;
+  --card: #190308;
   --card-foreground: var(--foreground);
   --popover: var(--card);
   --popover-foreground: var(--foreground);
@@ -24,26 +24,26 @@
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--foreground);
-  --muted: #150502;
-  --muted-foreground: #9c9a95;
+  --muted: #15020a;
+  --muted-foreground: #9d9594;
   --accent: var(--background-accent);
   --accent-foreground: var(--background);
-  --deep: #040201;
+  --deep: #040101;
   --deep-foreground: var(--foreground);
   --destructive: #ff6b5b;
   --destructive-foreground: var(--background);
-  --border: #2b2725;
+  --border: #2b2425;
   --input: var(--border);
   --ring: var(--primary-cta);
   --hairline: color-mix(in srgb, var(--foreground) 13%, transparent);
 
-  --glow-deep: #5c130a;
-  --glow-mid: #e05134;
-  --glow-low: #ffb3a3;
-  --glow-floor: #ffeae6;
-  --glass-tint: #b82f16;
+  --glow-deep: #5c0414;
+  --glow-mid: #d0123a;
+  --glow-low: #ff7a8c;
+  --glow-floor: #ffe0e5;
+  --glass-tint: #9a0a26;
   --glass-glow: var(--accent);
-  --glass-sky: #2a0704;
+  --glass-sky: #22030a;
 
   --font-heading: "Familjen Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
