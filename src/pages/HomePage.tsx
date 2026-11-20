@@ -101,53 +101,50 @@ export default function HomePage() {
         <PricingGlassColumns
           tag="Bespoke Services"
           title="Artisanal floral services and curation"
-          description="Choose signature luxury bouquets, recurring home subscriptions, or full-scale floral installations tailored to your vision."
+          description="Contact our studio directly for custom pricing, stem selection, and bespoke floral inquiries."
           items={[
             {
-              title: "Signature Petite",
-              price: "$125",
-              period: "per arrangement",
-              description: "Hand-crafted stem selection featuring luxury blush roses and seasonal botanical accents.",
+              title: "Signature Bouquets",
+              price: "Contact us for pricing",
+              description: "Hand-crafted arrangements featuring fresh luxury roses and seasonal botanical stems.",
               features: [
-                "Premium stem selection",
-                "Signature silk ribbon wrap",
-                "Same-day local delivery",
-                "Care card & flower food"
+                "Hand-selected fresh stems",
+                "Custom color palettes",
+                "Signature boutique wrapping",
+                "Local delivery & studio pickup"
               ],
               button: {
-                text: "Order bouquet",
-                href: "#shop"
-              }
-            },
-            {
-              title: "Floral Residency",
-              price: "$350",
-              period: "per month",
-              description: "Bi-weekly fresh luxury arrangements delivered in custom glass vessels for homes and foyers.",
-              features: [
-                "Two premium deliveries monthly",
-                "Vessel rotation included",
-                "Bespoke colour palette",
-                "Priority delivery slots"
-              ],
-              button: {
-                text: "Start subscription",
+                text: "Request a custom quote",
                 href: "#contact"
               }
             },
             {
-              title: "Bespoke Events",
-              price: "Custom",
-              period: "quoted per event",
-              description: "Full-service floral architecture for weddings, private galas, and grand celebrations.",
+              title: "Custom Arrangements",
+              price: "Contact us for pricing",
+              description: "Bespoke floral designs, custom gift boxes, and signature chocolate covered strawberries.",
               features: [
-                "On-site floral installation",
-                "Personalized moodboards",
-                "Tablescapes & entry arches",
-                "Dedicated event florist"
+                "Tailored floral styling",
+                "Chocolate covered strawberries",
+                "Direct florist consultation",
+                "Same-day & scheduled delivery"
               ],
               button: {
-                text: "Plan an event",
+                text: "Contact us for pricing",
+                href: "tel:2155947640"
+              }
+            },
+            {
+              title: "Events & Weddings",
+              price: "Request a custom quote",
+              description: "Full-service floral styling, tablescapes, and venue installations for special occasions.",
+              features: [
+                "Personalized event consultation",
+                "Venue & tablescape styling",
+                "Custom floral installations",
+                "On-site delivery & setup"
+              ],
+              button: {
+                text: "Request a custom quote",
                 href: "#contact"
               }
             }
